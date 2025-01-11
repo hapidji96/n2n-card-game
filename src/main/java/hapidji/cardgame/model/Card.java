@@ -1,12 +1,15 @@
 package hapidji.cardgame.model;
 
+import java.util.List;
+
 public class Card {
     private String name;
-    private int weightage;
 
-    public Card(String name, Integer weightage) {
+    public Card() {
+    }
+
+    public Card(String name) {
         this.name = name;
-        this.weightage = weightage;
     }
 
     public String getName() {
@@ -17,11 +20,62 @@ public class Card {
         this.name = name;
     }
 
-    public Integer getWeightage() {
-        return weightage;
-    }
+    public List<Card> getCardList() {
+        List<Card> cards = List.of(
+                new Card("2@"),
+                new Card("2#"),
+                new Card("2^"),
+                new Card("2*"),
+                new Card("3@"),
+                new Card("3#"),
+                new Card("3^"),
+                new Card("3*"),
+                new Card("4@"),
+                new Card("4#"),
+                new Card("4^"),
+                new Card("4*"),
+                new Card("5@"),
+                new Card("5#"),
+                new Card("5^"),
+                new Card("5*"),
+                new Card("6@"),
+                new Card("6#"),
+                new Card("6^"),
+                new Card("6*"),
+                new Card("7@"),
+                new Card("7#"),
+                new Card("7^"),
+                new Card("7*"),
+                new Card("8@"),
+                new Card("8#"),
+                new Card("8^"),
+                new Card("8*"),
+                new Card("9@"),
+                new Card("9#"),
+                new Card("9^"),
+                new Card("9*"),
+                new Card("10@"),
+                new Card("10#"),
+                new Card("10^"),
+                new Card("10*"),
+                new Card("J@"),
+                new Card("J#"),
+                new Card("J^"),
+                new Card("J*"),
+                new Card("Q@"),
+                new Card("Q#"),
+                new Card("Q^"),
+                new Card("Q*"),
+                new Card("K@"),
+                new Card("K#"),
+                new Card("K^"),
+                new Card("K*"),
+                new Card("A@"),
+                new Card("A#"),
+                new Card("A^"),
+                new Card("A*")
+        );
 
-    public void setWeightage(Integer weightage) {
-        this.weightage = weightage;
+        return cards;
     }
 }

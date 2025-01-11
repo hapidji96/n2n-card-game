@@ -1,11 +1,11 @@
 package hapidji.cardgame.model;
 
-public class PlayerAlphanumericHighest {
+public class PlayerCardCharacterHighestCounts {
     private String playerName;
     private String cardAlphanumeric;
     private int maxCount;
 
-    public PlayerAlphanumericHighest(String playerName, String cardAlphanumeric, int maxCount) {
+    public PlayerCardCharacterHighestCounts(String playerName, String cardAlphanumeric, int maxCount) {
         this.playerName = playerName;
         this.cardAlphanumeric = cardAlphanumeric;
         this.maxCount = maxCount;

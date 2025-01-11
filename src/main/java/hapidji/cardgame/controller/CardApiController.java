@@ -19,6 +19,6 @@ public class CardApiController {
 
     @GetMapping
     public List<Card> getCards() {
-        return cardService.getCardList();
+        return new Card().getCardList();
     }
 }

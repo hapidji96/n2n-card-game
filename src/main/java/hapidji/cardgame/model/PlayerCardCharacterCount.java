@@ -1,13 +1,13 @@
 package hapidji.cardgame.model;
 
-public class PlayerCardAlphanumericCount {
+public class PlayerCardCharacterCount {
     private String playerName;
-    private char cardAlphanumeric;
+    private String character;
     private int count;
 
-    public PlayerCardAlphanumericCount(String playerName, char cardAlphanumeric, int count) {
+    public PlayerCardCharacterCount(String playerName, String character, int count) {
         this.playerName = playerName;
-        this.cardAlphanumeric = cardAlphanumeric;
+        this.character = character;
         this.count = count;
     }
 
@@ -19,12 +19,12 @@ public class PlayerCardAlphanumericCount {
         this.playerName = playerName;
     }
 
-    public char getCardAlphanumeric() {
-        return cardAlphanumeric;
+    public String getCharacter() {
+        return character;
     }
 
-    public void setCardAlphanumeric(char cardAlphanumeric) {
-        this.cardAlphanumeric = cardAlphanumeric;
+    public void setCharacter(String character) {
+        this.character = character;
     }
 
     public int getCount() {
