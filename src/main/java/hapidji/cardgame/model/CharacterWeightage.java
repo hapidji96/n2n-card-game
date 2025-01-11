@@ -1,15 +1,15 @@
 package hapidji.cardgame.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 public class CharacterWeightage {
-    private char character;
-    private long charWeightage;
-    private String[] prefix = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
-    private String[] postfix = {"@", "#", "^", "*"};
+    private String character;
+    private int charWeightage;
 
-    public CharacterWeightage(char character, long charWeightage) {
+    public CharacterWeightage(String character, int charWeightage) {
         this.character = character;
         this.charWeightage = charWeightage;
     }
@@ -18,36 +18,19 @@ public class CharacterWeightage {
 
     }
 
-    public char getCharacter() {
+    public String getCharacter() {
         return character;
     }
 
-    public void setCharacter(char character) {
+    public void setCharacter(String character) {
         this.character = character;
     }
 
-    public long getCharWeightage() {
+    public int getCharWeightage() {
         return charWeightage;
     }
 
-    public void setCharWeightage(long charWeightage) {
+    public void setCharWeightage(int charWeightage) {
         this.charWeightage = charWeightage;
-    }
-
-    public int getCharWeightage(String character, String position) {
-        if(position.equalsIgnoreCase("prefix")) {
-            return getCharacterIndex(prefix, character);
-        } else if(position.equalsIgnoreCase("postfix")) {
-            return getCharacterIndex(postfix, character);
-        }
-
-        return -1;
-    }
-
-    public int getCharacterIndex(String[] array, String character) {
-        return IntStream.range(0, array.length)
-                .filter(i -> array[i].equalsIgnoreCase(character))
-                .findFirst()
-                .orElse(-1);
     }
 }

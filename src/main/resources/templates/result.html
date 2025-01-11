@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Card Game Test (N2N)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="card w-50">
+                <div class="card-header bg-info">
+                    <h1>Result Page</h1>
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="col-12">
+                                <div class="form-row">
+                                    <p><strong>Shuffled cards :</strong></p>
+                                    <table border="5">
+                                        <tr th:each="row : ${shuffledCards}">
+                                            <td th:each="card : ${row}" th:text="${card.name}"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="form-row">
+                                    <p><strong>Cards have been shuffled and distributed to 4 players :</strong></p>
+                                </div>
+                                <div class="form-row">
+                                    <p><i>Player 1</i></p>
+                                    <table border="5">
+                                        <tr>
+                                            <td th:each="item : ${playerCards}" th:if="${item.getPlayerName == 'Player1'}" th:text="${item.getCardName}"></td>
+                                        </tr>
+                                    </table>
+                                    <p><i>Player 2</i></p>
+                                    <table border="5">
+                                        <tr>
+                                            <td th:each="item : ${playerCards}" th:if="${item.getPlayerName == 'Player2'}" th:text="${item.getCardName}"></td>
+                                        </tr>
+                                    </table>
+                                    <p><i>Player 3</i></p>
+                                    <table border="5">
+                                        <tr>
+                                            <td th:each="item : ${playerCards}" th:if="${item.getPlayerName == 'Player3'}" th:text="${item.getCardName}"></td>
+                                        </tr>
+                                    </table>
+                                    <p><i>Player 4</i></p>
+                                    <table border="5">
+                                        <tr>
+                                            <td th:each="item : ${playerCards}" th:if="${item.getPlayerName == 'Player4'}" th:text="${item.getCardName}"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="form-row">
+                                    <p><strong>Winner: </strong>
+                                        <label th:if="${winner != null && winner.getPlayerName != ''}"
+                                               th:text="${winner.getPlayerName}"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

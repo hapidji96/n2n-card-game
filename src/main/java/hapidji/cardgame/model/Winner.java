@@ -9,6 +9,10 @@ public class Winner {
         this.isWinner = isWinner;
     }
 
+    public Winner() {
+
+    }
+
     public String getPlayerName() {
         return playerName;
     }

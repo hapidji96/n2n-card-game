@@ -5,6 +5,9 @@ public class PlayerCardCharacterCount {
     private String character;
     private int count;
 
+    public PlayerCardCharacterCount() {
+    }
+
     public PlayerCardCharacterCount(String playerName, String character, int count) {
         this.playerName = playerName;
         this.character = character;
@@ -33,5 +36,14 @@ public class PlayerCardCharacterCount {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    @Override
+    public String toString() {
+        return "PlayerCardCharacterCount{" +
+                "playerName='" + playerName + '\'' +
+                ", character='" + character + '\'' +
+                ", count=" + count +
+                '}';
     }
 }
