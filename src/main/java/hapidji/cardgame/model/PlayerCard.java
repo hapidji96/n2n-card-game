@@ -3,12 +3,10 @@ package hapidji.cardgame.model;
 public class PlayerCard {
     private String playerName;
     private String cardName;
-    private int cardWeightage;
 
-    public PlayerCard(String playerName, String cardName, Integer cardWeightage) {
+    public PlayerCard(String playerName, String cardName) {
         this.playerName = playerName;
         this.cardName = cardName;
-        this.cardWeightage = cardWeightage;
     }
 
     public String getPlayerName() {
@@ -27,11 +25,11 @@ public class PlayerCard {
         this.cardName = cardName;
     }
 
-    public Integer getCardWeightage() {
-        return cardWeightage;
-    }
-
-    public void setCardWeightage(Integer cardWeightage) {
-        this.cardWeightage = cardWeightage;
+    @Override
+    public String toString() {
+        return "PlayerCard{" +
+                "playerName='" + playerName + '\'' +
+                ", cardName='" + cardName + '\'' +
+                '}';
     }
 }

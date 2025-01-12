@@ -34,4 +34,13 @@ public class PlayerCardCharacterWeightage {
     public void setCharacterWeightage(int characterWeightage) {
         this.characterWeightage = characterWeightage;
     }
+
+    @Override
+    public String toString() {
+        return "PlayerCardCharacterWeightage{" +
+                "playerName='" + playerName + '\'' +
+                ", character='" + character + '\'' +
+                ", characterWeightage=" + characterWeightage +
+                '}';
+    }
 }

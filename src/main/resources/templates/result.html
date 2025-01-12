@@ -60,7 +60,14 @@
                                     <p><strong>Winner: </strong>
                                         <label th:if="${winner != null && winner.getPlayerName != ''}"
                                                th:text="${winner.getPlayerName}"></label>
+                                        <label th:if="${winner != null && winner.getReason() != ''}"
+                                               th:text="${winner.getReason()}"></label>
                                     </p>
+                                </div>
+                                <div class="form-row">
+                                    <p><strong>Logs: </strong></p>
+                                    <textarea th:if="${winner != null && winner.getLogs() != ''}"
+                                           th:text="${winner.getLogs()}" readonly></textarea>
                                 </div>
                             </div>
                         </div>

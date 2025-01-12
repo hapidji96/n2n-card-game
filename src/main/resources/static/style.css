@@ -109,3 +109,35 @@ h1 {
     background-clip: text; /* Ensures cross-browser support for gradient text */
     padding: 10px 0; /* Adds spacing inside the header */
 }
+
+textarea {
+    font-family: 'Courier New', monospace; /* Monospaced font for readability */
+    font-size: 16px; /* Larger font size for better readability */
+    color: white; /* Slightly darker text color */
+    background-color: #f8f9fa; /* Softer light gray background */
+    border: 2px solid #007bff; /* Blue border to match a theme */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 15px; /* Increased padding for more comfortable spacing */
+    width: 100%; /* Ensures it stretches to fit the container */
+    height: 150px; /* Sets a consistent height */
+    resize: none; /* Disables resizing for consistent appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    outline: none; /* Removes the default focus outline */
+}
+
+textarea:hover {
+    background-color: #eef2f7; /* Slight hover effect */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+textarea:focus {
+    border-color: #0056b3; /* Highlighted border on focus */
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5); /* Glow effect */
+}
+
+textarea[readonly] {
+    cursor: not-allowed; /* Non-editable cursor style */
+    background-color: black; /* Lighter background for clarity */
+    border: 2px solid #ced4da; /* Softer border for non-editable textarea */
+}
+
