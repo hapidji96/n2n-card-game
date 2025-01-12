@@ -1,125 +1,125 @@
-/*div {*/
-/*    margin: 20px;*/
-/*    padding: 20px;*/
-/*    border: 2px solid #007bff;*/
-/*    border-radius: 10px;*/
-/*    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);*/
-/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*!*div {*!*/
+/*!*    margin: 20px;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    border: 2px solid #007bff;*!*/
+/*!*    border-radius: 10px;*!*/
+/*!*    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);*!*/
+/*!*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*!*/
+/*!*}*!*/
+
+/*table {*/
+/*    width: 50%;*/
+/*    border-collapse: collapse;*/
+/*    margin: 10px 0;*/
+/*    font-family: Arial, sans-serif;*/
+/*    font-size: 16px;*/
+/*    text-align: center;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);*/
 /*}*/
 
-table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 10px 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/*tr:hover {*/
-/*    background-color: #f1f1f1;*/
-/*    cursor: pointer;*/
+/*th, td {*/
+/*    padding: 12px;*/
+/*    border: 1px solid #ddd;*/
 /*}*/
 
-td {
-    transition: transform 0.2s;
-}
+/*th {*/
+/*    background-color: #007bff;*/
+/*    color: #fff;*/
+/*    font-weight: bold;*/
+/*}*/
 
-td:hover {
-    transform: scale(1.1);
-    color: #007bff;
-    font-weight: bold;
-}
+/*tr:nth-child(even) {*/
+/*    background-color: #f9f9f9;*/
+/*}*/
 
-p {
-    font-family: 'Georgia', serif; /* Elegant and readable font */
-    font-size: 18px; /* Comfortable size for reading */
-    line-height: 1.6; /* Improved readability with appropriate spacing */
-    color: #333; /* Dark gray for less strain on eyes compared to black */
-    margin: 10px 0; /* Balanced spacing between paragraphs */
-    text-align: justify; /* Align text for clean edges */
-    text-indent: 20px; /* Indent the first line for a polished look */
-    background-color: #f9f9f9; /* Subtle background for highlighting */
-    padding: 10px; /* Adds space around the text */
-    border-left: 5px solid #007bff; /* Stylish accent border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
+/*!*tr:hover {*!*/
+/*!*    background-color: #f1f1f1;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*}*!*/
 
-button {
-    font-family: 'Arial', sans-serif; /* Clean and simple font */
-    font-size: 16px; /* Comfortable text size */
-    font-weight: bold; /* Emphasizes button text */
-    color: #fff; /* White text for contrast */
-    background-color: #007bff; /* Primary blue color */
-    border: none; /* Removes default border */
-    border-radius: 5px; /* Smooth rounded corners */
-    padding: 10px 20px; /* Balanced padding for a clickable area */
-    cursor: pointer; /* Indicates interactivity */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
-}
+/*td {*/
+/*    transition: transform 0.2s;*/
+/*}*/
 
-button:hover {
-    background-color: #0056b3; /* Slightly darker shade on hover */
-    transform: scale(1.05); /* Enlarges slightly for emphasis */
-}
+/*td:hover {*/
+/*    transform: scale(1.1);*/
+/*    color: #007bff;*/
+/*    font-weight: bold;*/
+/*}*/
 
-button:active {
-    background-color: #004085; /* Darker shade for active state */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow to show depth */
-    transform: scale(0.98); /* Slightly reduces size for click feedback */
-}
+/*p {*/
+/*    font-family: 'Georgia', serif; !* Elegant and readable font *!*/
+/*    font-size: 18px; !* Comfortable size for reading *!*/
+/*    line-height: 1.6; !* Improved readability with appropriate spacing *!*/
+/*    color: #333; !* Dark gray for less strain on eyes compared to black *!*/
+/*    margin: 10px 0; !* Balanced spacing between paragraphs *!*/
+/*    text-align: justify; !* Align text for clean edges *!*/
+/*    text-indent: 20px; !* Indent the first line for a polished look *!*/
+/*    background-color: #f9f9f9; !* Subtle background for highlighting *!*/
+/*    padding: 10px; !* Adds space around the text *!*/
+/*    border-left: 5px solid #007bff; !* Stylish accent border *!*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); !* Subtle shadow for depth *!*/
+/*}*/
 
-button:disabled {
-    background-color: #d6d6d6; /* Gray background for disabled state */
-    color: #9a9a9a; /* Muted text color */
-    cursor: not-allowed; /* Shows disabled state */
-    box-shadow: none; /* Removes shadow for a flat appearance */
-}
+/*button {*/
+/*    font-family: 'Arial', sans-serif; !* Clean and simple font *!*/
+/*    font-size: 16px; !* Comfortable text size *!*/
+/*    font-weight: bold; !* Emphasizes button text *!*/
+/*    color: #fff; !* White text for contrast *!*/
+/*    background-color: #007bff; !* Primary blue color *!*/
+/*    border: none; !* Removes default border *!*/
+/*    border-radius: 5px; !* Smooth rounded corners *!*/
+/*    padding: 10px 20px; !* Balanced padding for a clickable area *!*/
+/*    cursor: pointer; !* Indicates interactivity *!*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); !* Subtle shadow for depth *!*/
+/*    transition: background-color 0.3s ease, transform 0.2s ease; !* Smooth hover effects *!*/
+/*}*/
 
-h1 {
-    font-family: 'Verdana', sans-serif; /* Modern and clean font */
-    font-size: 36px; /* Prominent size for headlines */
-    font-weight: bold; /* Emphasizes the header */
-    color: #333; /* Neutral dark gray for elegance */
-    text-align: center; /* Centers the header text */
-    margin: 20px 0; /* Balanced spacing around the header */
-    line-height: 1.2; /* Slightly tighter line spacing for bold impact */
-    letter-spacing: 1.5px; /* Adds sophistication with spaced-out letters */
-    text-transform: uppercase; /* Makes the header text stand out */
-    background: linear-gradient(90deg, #007bff, #00c6ff); /* Gradient background */
-    color: transparent; /* Text color is transparent to show gradient */
-    -webkit-background-clip: text; /* Clips the gradient to text for effect */
-    background-clip: text; /* Ensures cross-browser support for gradient text */
-    padding: 10px 0; /* Adds spacing inside the header */
-}
+/*button:hover {*/
+/*    background-color: #0056b3; !* Slightly darker shade on hover *!*/
+/*    transform: scale(1.05); !* Enlarges slightly for emphasis *!*/
+/*}*/
+
+/*button:active {*/
+/*    background-color: #004085; !* Darker shade for active state *!*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); !* Reduces shadow to show depth *!*/
+/*    transform: scale(0.98); !* Slightly reduces size for click feedback *!*/
+/*}*/
+
+/*button:disabled {*/
+/*    background-color: #d6d6d6; !* Gray background for disabled state *!*/
+/*    color: #9a9a9a; !* Muted text color *!*/
+/*    cursor: not-allowed; !* Shows disabled state *!*/
+/*    box-shadow: none; !* Removes shadow for a flat appearance *!*/
+/*}*/
+
+/*h1 {*/
+/*    font-family: 'Verdana', sans-serif; !* Modern and clean font *!*/
+/*    font-size: 36px; !* Prominent size for headlines *!*/
+/*    font-weight: bold; !* Emphasizes the header *!*/
+/*    color: #333; !* Neutral dark gray for elegance *!*/
+/*    text-align: center; !* Centers the header text *!*/
+/*    margin: 20px 0; !* Balanced spacing around the header *!*/
+/*    line-height: 1.2; !* Slightly tighter line spacing for bold impact *!*/
+/*    letter-spacing: 1.5px; !* Adds sophistication with spaced-out letters *!*/
+/*    text-transform: uppercase; !* Makes the header text stand out *!*/
+/*    background: linear-gradient(90deg, #007bff, #00c6ff); !* Gradient background *!*/
+/*    color: transparent; !* Text color is transparent to show gradient *!*/
+/*    -webkit-background-clip: text; !* Clips the gradient to text for effect *!*/
+/*    background-clip: text; !* Ensures cross-browser support for gradient text *!*/
+/*    padding: 10px 0; !* Adds spacing inside the header *!*/
+/*}*/
 
 textarea {
     font-family: 'Courier New', monospace; /* Monospaced font for readability */
-    font-size: 16px; /* Larger font size for better readability */
+    font-size: 13px; /* Larger font size for better readability */
     color: white; /* Slightly darker text color */
     background-color: #f8f9fa; /* Softer light gray background */
     border: 2px solid #007bff; /* Blue border to match a theme */
     border-radius: 8px; /* Rounded corners for a modern look */
     padding: 15px; /* Increased padding for more comfortable spacing */
     width: 100%; /* Ensures it stretches to fit the container */
-    height: 150px; /* Sets a consistent height */
+    height: 500px; /* Sets a consistent height */
     resize: none; /* Disables resizing for consistent appearance */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
     outline: none; /* Removes the default focus outline */
@@ -140,4 +140,107 @@ textarea[readonly] {
     background-color: black; /* Lighter background for clarity */
     border: 2px solid #ced4da; /* Softer border for non-editable textarea */
 }
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Table Styling */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 5px 0; /* Reduced margin to save space */
+    font-size: 14px; /* Slightly smaller font size */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 8px; /* Reduced padding for smaller cell height */
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td {
+    transition: transform 0.2s;
+}
+
+td:hover {
+    transform: scale(1.1);
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 14px; /* Reduced font size */
+    line-height: 1.4; /* Reduced line height */
+    margin: 5px 0; /* Reduced margins */
+    padding: 5px; /* Reduced padding */
+    border-left: 3px solid #007bff; /* Smaller border */
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+button {
+    font-size: 14px; /* Reduced font size */
+    padding: 5px 10px; /* Reduced padding */
+    border-radius: 4px; /* Slightly smaller border radius */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 28px; /* Reduced font size */
+    margin: 10px 0; /* Reduced margin */
+    padding: 5px 0; /* Reduced padding */
+    line-height: 1.2;
+}
+
+/*!* Textarea Styling *!*/
+/*textarea {*/
+/*    font-size: 14px; !* Reduced font size *!*/
+/*    padding: 10px; !* Reduced padding *!*/
+/*    height: 100px; !* Reduced height *!*/
+/*    resize: none;*/
+/*    border-radius: 6px; !* Smaller border radius *!*/
+/*    background-color: #000; !* Black background for logs *!*/
+/*    color: #fff; !* White text for readability *!*/
+/*    border: 2px solid #007bff;*/
+/*}*/
+
+/*!* Textarea hover and focus *!*/
+/*textarea:hover {*/
+/*    background-color: #222; !* Slightly lighter black *!*/
+/*    border-color: #0056b3;*/
+/*}*/
+
+/*textarea:focus {*/
+/*    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);*/
+/*}*/
+
+/*!* Readonly Textarea *!*/
+/*textarea[readonly] {*/
+/*    cursor: not-allowed;*/
+/*    background-color: #000;*/
+/*    color: #fff;*/
+/*}*/
+
+/* Additional Styles for Better Layout */
+.form-row {
+    margin-bottom: 10px; /* Adds spacing between form rows */
+}
+
+
 

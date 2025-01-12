@@ -170,7 +170,7 @@ public class CardService {
                 // Player4, 5, 4 occurences
 
                 // Winner found - Player 4
-                String reason = "(Rule 1 - Highest prefix occurrence - " + playerPrefixHighestCount.get(0).getCharacter() + " occurred " + playerPrefixHighestCount.get(0).getCount() + " times)";
+                String reason = "\n(Rule 1 - Highest prefix occurrence - " + playerPrefixHighestCount.get(0).getCharacter() + " occurred " + playerPrefixHighestCount.get(0).getCount() + " times)";
                 logs.append("\n" + reason);
                 return new Winner(playerPrefixHighestCount.get(0).getPlayerName(), true, reason, logs);
             }
@@ -245,7 +245,7 @@ public class CardService {
                 // Player1, Q, 110 weightage
                 // Player2, Q, 110 weightage
 
-                logs.append("\nPlayers with Highest Prefix Occurrence and Highest Weightage :");
+                logs.append("\n\nPlayers with Highest Prefix Occurrence and Highest Weightage :");
                 System.out.println("Players with Highest Prefix Occurrence and Highest Weightage:");
                 for (PlayerCardCharacterWeightage item : playerCardHighestPrefixWeightageCleaned) {
                     PlayerCardCharacterWeightage playerCardCharacterWeightage = new PlayerCardCharacterWeightage(item.getPlayerName(), item.getCharacter(), item.getCharacterWeightage());
@@ -259,7 +259,7 @@ public class CardService {
                 // Player1, Q, 110 weightage
 
                 // Winner found - Player1, Q, 110 weightage
-                String reason = "(Rule 2 - Player with the highest prefix occurrence and highest weightage - " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacter() + " with " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacterWeightage() + " weightage)";
+                String reason = "\n(Rule 2 - Player with the highest prefix occurrence and highest weightage - " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacter() + " with " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacterWeightage() + " weightage)";
                 logs.append("\n" + reason);
                 return new Winner(playerCardHighestPrefixWeightageCleaned.get(0).getPlayerName(), true, reason, logs);
             }
@@ -286,7 +286,7 @@ public class CardService {
                 // Player2, Q^
                 // Player2, Q*
 
-                logs.append("\nPlayer Cards of Highest Prefix Occurrence: :");
+                logs.append("\n\nPlayer Cards of Highest Prefix Occurrence: :");
                 System.out.println("Player Cards of Highest Prefix Occurrence :");
                 for (PlayerCard playerCard : playerCardsOfHighestPrefixOccurence) {
                     PlayerCard item = new PlayerCard(playerCard.getPlayerName(), playerCard.getCardName());
@@ -304,7 +304,7 @@ public class CardService {
                         characterWeightageService.getCharWeightage(cardPostfix, "postfix")));
             }
 
-            logs.append("\nPlayer Cards with Highest Prefix Occurrence & Postfix Weightage :");
+            logs.append("\n\nPlayer Cards with Highest Prefix Occurrence & Postfix Weightage :");
             System.out.println("Player Cards with Highest Prefix Occurrence & Postfix Weightage :");
             for (PlayerCardCharacterWeightage item : playerCardsPostfixWeightage) {
                 PlayerCardCharacterWeightage playerCardCharacterWeightage = new PlayerCardCharacterWeightage(item.getPlayerName(), item.getCharacter(), item.getCharacterWeightage());
@@ -329,7 +329,7 @@ public class CardService {
                     .filter(p -> p.getCharacterWeightage() == highest)
                     .toList();
 
-            logs.append("\nPlayer Cards with Highest Prefix Occurrence & Highest Postfix :");
+            logs.append("\n\nPlayer Cards with Highest Prefix Occurrence & Highest Postfix :");
             System.out.println("Player Cards with Highest Prefix Occurrence & Highest Postfix :");
             for (PlayerCardCharacterWeightage item : playerCardsPostfixWeightageHighest) {
                 PlayerCardCharacterWeightage playerCardCharacterWeightage = new PlayerCardCharacterWeightage(item.getPlayerName(), item.getCharacter(), item.getCharacterWeightage());
@@ -342,7 +342,7 @@ public class CardService {
                 // Player2, *, 40 weightage
 
                 // Winner found - Player1
-                String reason = "(Rule 3 - Player with the highest postfix char weightage - " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacter() + " with " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacterWeightage() + " weightage)";
+                String reason = "\n(Rule 3 - Player with the highest postfix char weightage - " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacter() + " with " + playerCardHighestPrefixWeightageCleaned.get(0).getCharacterWeightage() + " weightage)";
                 return new Winner(playerCardHighestPrefixWeightageCleaned.get(0).getPlayerName(), true, reason, logs);
             }
         } catch (Exception exception) {
