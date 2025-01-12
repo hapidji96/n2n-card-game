@@ -112,10 +112,6 @@ public class CardService {
         return playerCards;
     }
 
-    public Winner checkWinnerRule2(List<PlayerCard> playerCards) {
-        return null;
-    }
-
     public Winner calculatingWinner(List<PlayerCard> playerCards) throws Exception {
         StringBuilder logs = new StringBuilder();
         try {
